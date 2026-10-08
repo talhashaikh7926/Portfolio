@@ -1,0 +1,108 @@
+.academy-root {
+  --academy-bg: #f7f8f6;
+  --academy-bg-deep: #1e2d26;
+  --academy-foreground: #1a2420;
+  --academy-muted: #5c6660;
+  --academy-green: #3d5a47;
+  --academy-green-deep: #2e4a3a;
+  --academy-lavender: #e4dff0;
+  --academy-lavender-deep: #cfc6e8;
+  --academy-gold: #e8c547;
+  --academy-cream: #ffffff;
+  --academy-blush: #eef0ec;
+  --academy-border: #dde3dc;
+
+  background: var(--academy-bg);
+  color: var(--academy-foreground);
+  font-family: var(--font-academy-sans), system-ui, sans-serif;
+}
+
+.academy-serif {
+  font-family: var(--font-academy-serif), Georgia, serif;
+}
+
+.academy-gradient-text {
+  background: linear-gradient(
+    120deg,
+    var(--academy-green-deep) 0%,
+    var(--academy-green) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.academy-hero-glow {
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 85% 15%,
+      rgba(228, 223, 240, 0.9),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 45% at 5% 90%,
+      rgba(61, 90, 71, 0.08),
+      transparent 50%
+    ),
+    var(--academy-bg);
+}
+
+.academy-card {
+  background: var(--academy-cream);
+  border: 1px solid var(--academy-border);
+  box-shadow: 0 4px 24px rgba(30, 45, 38, 0.05);
+}
+
+.academy-card:hover {
+  box-shadow: 0 12px 40px rgba(61, 90, 71, 0.1);
+}
+
+.academy-btn-primary {
+  background: var(--academy-green-deep);
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.academy-btn-primary:hover {
+  transform: translateY(-1px);
+  background: var(--academy-green);
+  box-shadow: 0 8px 24px rgba(46, 74, 58, 0.3);
+}
+
+.academy-btn-secondary {
+  background: var(--academy-lavender);
+  color: var(--academy-green-deep);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.academy-btn-secondary:hover {
+  transform: translateY(-1px);
+  background: var(--academy-lavender-deep);
+}
+
+.academy-btn-outline {
+  border: 1px solid var(--academy-border);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.academy-btn-outline:hover {
+  border-color: var(--academy-green);
+  color: var(--academy-green-deep);
+}
+
+.academy-section-dark {
+  background: var(--academy-bg-deep);
+  color: #eef2ef;
+}
+
+.academy-section-dark .text-muted-academy {
+  color: #a8b5ad;
+}
+
+.academy-badge-cpd {
+  background: var(--academy-green-deep);
+  color: white;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+}
